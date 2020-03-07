@@ -2,19 +2,20 @@ package Almacen.Practica1a;
 
 public class Cliente {
 	private String Nombre;
+
 	private String 	Apellidos;
 	private String 	Email;
-	private String  Teléfono;
-	private String  Dirección;
-	
-	public Cliente(String nombre, String apellidos, String email, String teléfono, String dirección) {
+	private String  Telefono;
+	private String  Direccion;
+	public Cliente(String nombre, String apellidos, String email, String telefono, String direccion) {
 		super();
 		Nombre = nombre;
 		Apellidos = apellidos;
 		Email = email;
-		Teléfono = teléfono;
-		Dirección = dirección;
+		Telefono = telefono;
+		Direccion = direccion;
 	}
+	
 	public String getNombre() {
 		return Nombre;
 	}
@@ -33,18 +34,20 @@ public class Cliente {
 	public void setEmail(String email) {
 		Email = email;
 	}
-	public String getTeléfono() {
-		return Teléfono;
+	public String getTelefono() {
+		return Telefono;
 	}
-	public void setTeléfono(String teléfono) {
-		Teléfono = teléfono;
+	public void setTelefono(String telefono) {
+		Telefono = telefono;
 	}
-	public String getDirección() {
-		return Dirección;
+	public String getDireccion() {
+		return Direccion;
 	}
-	public void setDirección(String dirección) {
-		Dirección = dirección;
+	public void setDireccion(String direccion) {
+		Direccion = direccion;
 	}
+	
+	
 	
 
 }
