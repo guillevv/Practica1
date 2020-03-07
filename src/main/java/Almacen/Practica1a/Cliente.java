@@ -2,7 +2,6 @@ package Almacen.Practica1a;
 
 public class Cliente {
 	private String Nombre;
-	
 	private String 	Apellidos;
 	private String 	Email;
 	private String  Teléfono;
