@@ -1,5 +1,10 @@
 package Almacen.Practica1a;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Producto {
 
 	private String codigo;
@@ -13,6 +18,8 @@ public class Producto {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+	// Constructor
 	public Producto(String codigo, String nombre, String descripcion, int stock, int[] localización, int pendientes) {
 		super();
 		this.codigo = codigo;
@@ -23,7 +30,10 @@ public class Producto {
 
 	}
 	
+	// Getter y setters 
+	//Las etiquetaremos con atributos xml
 	
+	@XmlAttribute
 	public String getCodigo() {
 		return codigo;
 	}
@@ -33,7 +43,7 @@ public class Producto {
 		this.codigo = codigo;
 	}
 
-
+	@XmlElement
 	public String getNombre() {
 		return nombre;
 	}
@@ -43,7 +53,7 @@ public class Producto {
 		this.nombre = nombre;
 	}
 
-
+	@XmlElement
 	public String getDescripcion() {
 		return descripcion;
 	}
@@ -53,7 +63,7 @@ public class Producto {
 		this.descripcion = descripcion;
 	}
 
-
+	@XmlElement
 	public int getStock() {
 		return stock;
 	}
@@ -63,7 +73,7 @@ public class Producto {
 		this.stock = stock;
 	}
 
-
+	@XmlElement
 	public int[] getLocalización() {
 		return localización;
 	}
@@ -73,7 +83,7 @@ public class Producto {
 		this.localización = localización;
 	}
 
-
+	@XmlElement
 	public int getPendientes() {
 		return pendientes;
 	}
