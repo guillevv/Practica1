@@ -1,13 +1,13 @@
 package Almacen.Practica1a;
 
 public class Cliente {
-	private String Nombre;
-
+	
+	private String  Nombre;
 	private String 	Apellidos;
 	private String 	Email;
 	private String  Telefono;
-	private String  Direccion;
-	public Cliente(String nombre, String apellidos, String email, String telefono, String direccion) {
+	private String  Direccion[];
+	public Cliente(String nombre, String apellidos, String email, String telefono, String[] direccion) {
 		super();
 		Nombre = nombre;
 		Apellidos = apellidos;
@@ -40,10 +40,10 @@ public class Cliente {
 	public void setTelefono(String telefono) {
 		Telefono = telefono;
 	}
-	public String getDireccion() {
+	public String[] getDireccion() {
 		return Direccion;
 	}
-	public void setDireccion(String direccion) {
+	public void setDireccion(String[] direccion) {
 		Direccion = direccion;
 	}
 	
