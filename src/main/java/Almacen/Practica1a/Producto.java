@@ -2,15 +2,25 @@ package Almacen.Practica1a;
 
 public class Producto {
 
-	String codigo;
-	String nombre;
-	String descripcion;
-	int stock;
-	int[] localización = new int[3];
-	int pendientes;
+	private String codigo;
+	private String nombre;
+	private String descripcion;
+	private int stock;
+	private int[] localización = new int[3];
+	private int pendientes;
 	
 	public Producto() {
 		// TODO Auto-generated constructor stub
+	}
+	
+	public Producto(String codigo, String nombre, String descripcion, int stock, int[] localización, int pendientes) {
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.stock = stock;
+		this.localización = localización;
+
 	}
 	
 	
