@@ -5,7 +5,7 @@ Corresponde a la primera práctica de la Asignatura de Desarrollo e Integración
 ## Objetivos
 
 El objetivo de esta práctica es poner en práctica los conocimientos adquiridos sobre
-Git y la herramienta Github.
+Git,la herramienta Github y desarrollando un xml.
 
 ### Integrantes
 
